@@ -1,0 +1,68 @@
+/* Bootstrap overrides/additions */
+
+.container.no-padding {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.container.min-width {
+	min-width:100%;
+
+	@media screen and (min-width:$screen-sm) {
+		min-width:750px;
+	}
+
+	@media screen and (min-width:$screen-md) {
+		min-width:970px;
+	}
+
+	@media screen and (min-width:$screen-lg) {
+		min-width:1170px;
+	}
+}
+
+.row.no-margin {
+	margin-left:0px;
+	margin-right:0px;
+}
+
+@media screen and (min-width:$screen-lg) {
+	.col-lg-20p {
+		width:20%;
+	}
+}
+
+@media screen and (max-width:$screen-xxs-max) {
+	.hidden-xxs {
+		display:none !important;
+	}
+
+	.col-xxs-12 {
+		width:100%;
+	}
+
+	.col-xxs-9 {
+		width:75%;
+	}
+
+	.col-xxs-6 {
+		width:50%;
+	}
+}
+
+.visible-xxs {
+	@media screen and (min-width:$screen-xs) {
+		display:none !important;
+	}
+}
+
+.checkbox input[type='checkbox'],
+.radio input[type='radio'] {
+	position:static;
+	margin:0px;
+	padding:0px;
+}
+
+.input-group {
+	width:100%;
+}

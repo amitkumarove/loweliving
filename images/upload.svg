@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="38px" viewBox="0 0 41 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>upload</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.545098 0 0 0 0 0.556863 0 0 0 0 0.576471 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Lowe---Help-Desk-" transform="translate(-1362.000000, -2274.000000)">
+            <g id="upload" transform="translate(1139.000000, 2266.000000)">
+                <g transform="translate(224.886719, 10.500000)">
+                    <g filter="url(#filter-1)" id="ARROW---HERO-Copy">
+                        <g transform="translate(18.713281, 13.500000) scale(1, -1) rotate(-270.000000) translate(-18.713281, -13.500000) translate(5.713281, 4.000000)">
+                            <g id="Arrow" transform="translate(0.000000, 0.100000)" stroke="#FFFFFF" stroke-width="2">
+                                <line x1="0.220338983" y1="8.65331279" x2="25.8029517" y2="8.98613251" id="Path-2"></line>
+                                <polyline id="Stroke-1" transform="translate(22.092729, 8.986133) rotate(-90.000000) translate(-22.092729, -8.986133) " points="30.6295548 5.33731895 22.0927289 12.6349461 13.555903 5.33731895"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                    <polyline id="Path-3" stroke="#8B8E93" stroke-width="2" points="38 23.3847656 38 34.3847656 0 34.3847656 0 23.3847656"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

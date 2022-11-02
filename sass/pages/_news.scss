@@ -1,0 +1,86 @@
+.featured-post-wrapper {
+    padding-top: 133px;
+
+	@media screen and (max-width: $screen-sm-max) {
+		padding-top: 0;
+	}
+
+	.featured-post {
+		&.half-left-bleed {
+			.content-wrapper{
+				position: relative;
+
+	            @media screen and (min-width:$screen-md) {
+	                padding-left: 100px;
+	                padding-right: 55px;
+	            }
+
+	            @media screen and (min-width:$screen-lg) {
+	                padding-left: 60px;
+	                padding-right:0px;
+	            }
+
+	            @media screen and (max-width:$screen-sm-max) {
+	            	padding-left: 65px;
+	            }
+	        }
+
+	        .motif {
+                @media screen and (max-width:$screen-sm-max) {
+		        	display: block;
+		        	margin-top: 0;
+		        	margin-left: -15px;
+		        }
+	        }
+
+            @media screen and (min-width:1600px) {
+                &.orientation-landscape {
+                    .img-wrapper {
+                        width:calc(50vw + 100px);
+                    }
+                }
+            }
+		}
+
+		.link {
+			display: none;
+			color: #30343a;
+
+            @media screen and (max-width:$screen-sm-max) {
+            	display: block;
+				left: 15px;
+				top: 215px;
+            }
+		}
+
+		.content {
+	        h3 {
+	            color: $clr-text-color;
+	            font-size: 14px;
+	            margin-bottom: 40px;
+
+                @media screen and (max-width:$screen-sm-max),
+    	        screen and (max-height: 900px) and (min-width: 1200px) {
+                	margin-bottom: 30px;
+                }
+	        }
+
+            h2 {
+            	font-size: 48px;
+            	line-height: 54px;
+
+                @media screen and (max-width:$screen-md-max) {
+                    font-size: 36px;
+                    line-height: 42px;
+                }
+
+                @media screen and (max-width:$screen-sm-max),
+		        screen and (max-height: 900px) and (min-width: 1200px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+		}
+	}
+}
+

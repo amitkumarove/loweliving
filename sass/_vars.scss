@@ -1,0 +1,37 @@
+/* SASS Vars */
+$screen-lg: 1200px;
+$screen-md-max: $screen-lg - 1;
+$screen-md: 992px;
+$screen-sm-max: $screen-md - 1;
+$screen-sm: 768px;
+$screen-xs-max: $screen-sm - 1;
+$screen-xs: 420px;
+$screen-xxs-max: $screen-xs - 1;
+
+$font-polaris:'Polaris', Helvetica, Arial, sans-serif;
+$font-polaris-book:'Polaris Book', Helvetica, Arial, sans-serif;
+$font-theinhardt:'Theinhardt-Light', 'Polaris', Helvetica, Arial, sans-serif;
+
+$fw-light:300;
+$fw-normal:400;
+$fw-book:400;
+$fw-medium:500;
+$fw-bold:600;
+
+$clr-living:#e09f7e;
+$clr-livinghover:#cb805a;
+$clr-create:#007dc1;
+$clr-createhover:#02669c;
+$clr-headerbg: #5E6268;
+$clr-bg: #55595e;
+$clr-text-color: #8B8E93;
+
+$clr-lightgrey:#f1f1f1;
+$clr-grey:#e5e5e5;
+$clr-midgrey:#85898f;
+$clr-darkgrey:#30343a; // This is kinda blue
+$clr-darkergrey:#181a1d;
+$clr-bordergrey:#979797;
+
+$header-height: 150px;
+$header-height-sm: 84px;

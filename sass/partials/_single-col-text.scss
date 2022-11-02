@@ -1,0 +1,108 @@
+.single-col-text {
+	padding-top: 176px;
+    font-family: $font-polaris-book;
+
+    &--no-bottom-gutter {
+        padding-bottom: 0;
+    }
+
+    @media screen and (max-height: 900px) and (min-width: 1200px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        &--no-bottom-gutter {
+            padding-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width:$screen-sm-max) {
+        padding:145px 20px 0px 55px;
+
+        + .two-col-text {
+            padding-top:85px;
+        }
+    }
+
+	.link:not(.link--motif-offset) {
+        top: 236px;
+        .page-template-land-acquisition & { 
+            top: 270px;
+        }
+        @media screen and (max-height: 900px) and (min-width: 1200px) {
+            top:125px !important;
+        }
+
+        @media screen and (max-width:$screen-sm-max) {
+            top:100px !important;
+        }
+	}
+	p {
+		max-width: 510px;
+		margin: 0;
+		font-size: 24px;
+        line-height: 36px;
+		color: white;
+
+        @media screen and (max-width:$screen-sm-max),
+        screen and (max-height: 900px) and (min-width: 1200px) {
+            font-size:20px;
+            line-height: 30px;
+        }
+    }
+    .container:not(.container-strict) {
+        @media screen and (max-width:$screen-sm-max) {
+            //width:100%;
+        }
+    }
+    .page-template-land-acquisition & {
+        padding-bottom: 32px;
+
+        h3 {
+            font-size: 30px;
+            line-height: 46px;
+            font-weight: $fw-book;
+            color: white;
+            margin-bottom: 30px;
+
+            @media screen and (max-width:$screen-sm-max),
+            screen and (max-height: 900px) and (min-width: 1200px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+
+            @media screen and (max-width:$screen-sm-max),
+            screen and (max-height: 900px) and (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        /*.stripe {
+            background: linear-gradient(0deg, #55595e calc(100% - 176px), transparent 12.625rem);
+            &:after {
+                content: '';
+                margin-top: -176px;
+                position:absolute;
+                left: 0px;
+                height: 176px;
+                width:100%;
+                bottom: 0px;
+                background:  rgba(85, 89, 94, 0.35);
+            }
+            &.pink { 
+                
+                &:after {
+                    background: rgba(224, 159, 126, 0.72);
+                }
+            }
+            .link {
+                top: 270px;
+            }
+        }*/
+    }
+	
+}

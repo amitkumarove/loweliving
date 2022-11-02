@@ -1,0 +1,120 @@
+// subscription-box SASS
+
+.page-template-subscriptions {
+    .thanks-content {
+        padding-bottom:10px;
+        @media screen and (min-width:$screen-md) {
+            padding-top:140px;
+            padding-bottom:100px;
+        }
+    }
+
+    .loading-gif {
+        display: block;
+        margin: 20px auto 0px;
+        width: 20px;
+        opacity: 0;
+        transition: all 300ms ease;
+
+        &.in {
+            opacity: 1;
+        }
+    }
+
+    #subscription-options {
+        .check-input {
+            text-align: left;
+            margin: 0pc auto;
+            display: table;
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            input[type="checkbox"] + label {
+                display: flex;
+                line-height: 27px;
+            }
+
+            input[type="checkbox"] + label span {
+                display: inline-block;
+                width: 30px;
+                height: 27px;
+                margin: 0 10px 0 0;
+                vertical-align: middle;
+                flex-grow: 0;
+                flex-shrink: 0;
+                background: {
+                    image: url(../../images/check-box.png);
+                    position: left top;
+                    repeat: no-repeat;
+                    size: auto 100%;
+                }
+                cursor: pointer;
+            }
+
+            input[type="checkbox"]:checked + label span {
+                background-position: -30px top;
+            }
+        }
+
+        .form-block{
+            margin: 0 0 25px;
+
+            p{
+                margin: 0 0 30px;
+
+                &.form-field{
+                    margin: 2px 0 0;
+                }
+
+                &.small {
+                    font-size:16px;
+                    margin-bottom:55px;
+                }
+            }
+
+            &__inputs{
+                label {
+                    margin:0px !important;
+                }
+
+                p{
+                    margin:0 0 25px;
+                }
+            }
+        }
+
+        #submit-btn {
+            height:58px !important;
+            margin:0px !important;
+            border:1px solid #E09F7E;
+            background:transparent;
+            font-size:16px;
+            white-space: normal;
+            text-transform: uppercase;
+            color:#E09F7E;
+
+            &:hover {
+                background:#E09F7E;
+                color:white;
+            }
+        }
+    }
+
+    .sub-error {
+        margin: 0 0 25px !important;
+        color: red;
+        display: none;
+    }
+
+    #unsubscribe-all {
+        margin-top: 17px;
+        font-size: 11px;
+        padding: 9px 45px 7px 45px;
+    }
+
+    .thank-you {
+        display: none;
+    }
+}

@@ -1,0 +1,68 @@
+.land-acq-header {
+    height: 465px;
+
+    @media screen and (max-width: $screen-xs-max) {
+        height: 355px;
+    }
+}
+
+
+.land-acq-landing {
+    &.divisions {
+        padding: 40px 0 100px;
+
+        @media screen and (max-width: $screen-sm-max) {
+            padding: 40px 0 40px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            padding: 40px 0 15px;
+        }
+        
+        .tile.division {
+            padding: 105px 85px;
+
+            h1 {
+                font-weight: $fw-bold;
+            }
+
+            h2 {
+                span.trustedpartner-intro {
+                    max-width: 100%;
+                }
+            }
+    
+            p {
+                max-width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+            @media screen and (max-width: $screen-xs-max) {
+                padding: 60px 30px;
+
+                h1 {
+                    padding-top: 10px;
+                }
+
+                h2{
+                    .intro-h2{
+                        font-size:19px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: $screen-xxs-max) {
+                padding: 30px 15px;
+            }
+
+
+
+        }
+        .tile.division.offset {
+            margin: -190px 0 0;
+        }
+        
+    }
+}

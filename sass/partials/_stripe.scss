@@ -1,0 +1,92 @@
+.privacy-content {
+    .stripe {
+        // background: linear-gradient(0deg, #55595e calc(100% - 176px), transparent 12.625rem);
+    }
+}
+.stripe {
+    position:absolute;
+    top:0px;
+    left: 0px;
+    width: 119px;
+    height: 352px;
+    margin-top: -176px;
+    z-index: 9;
+    @media screen and (max-width:$screen-sm) {
+        max-width: 80px;
+        height: 260px;
+        margin-top: -130px;
+    }
+    /*&.bg-dark {
+        background:linear-gradient(0deg, #55595e calc(100% - 176px), transparent 12.625rem);
+        &:after {
+            content: '';
+            margin-top: -176px;
+            position:absolute;
+            left: 0px;
+            height: 176px;
+            width:100%;
+            bottom: 0px;
+            background:  rgba(85, 89, 94, 0.35);
+        }
+    }*/
+    &.top-left {
+        top:0px;
+        bottom: auto;
+        right: auto;
+    }
+    &.top-right {
+        top: 0px;
+        bottom: auto;
+        right: 0px;
+        left: auto;
+    }
+    &.bottom-left {
+        top:auto;
+        bottom: 0px;
+        left:0px;
+        margin-bottom: -176px;
+        right: auto;
+    }
+    &.bottom-right {
+        top: auto;
+        bottom: 0px;
+        right: 0px;
+        left: auto;
+        margin-bottom: -176px;
+    }
+}
+.half-right-bleed {
+    .stripe {
+        margin-top:0px;
+        // background: linear-gradient(0deg, #f1f1f1 calc(100% - 176px), #f1f1f1 12.625rem);
+    }
+}
+.half-left-bleed {
+    .stripe {
+        margin-top:0px;
+        left: auto;
+        right: 0px;
+        top: auto;
+        bottom: 120px;
+        margin-bottom: 0px;
+        // background: linear-gradient(0deg, #f1f1f1 calc(100% - 176px), #f1f1f1 12.625rem);
+    }
+}
+/* stripe post*/
+#posts {
+    .stripe {
+        // background: linear-gradient(0deg, #f1f1f1 calc(100% - 176px), #f1f1f1 12.625rem);
+        &.top-left {
+            margin-top: 140px;
+        }
+        &.bottom-right {
+            background-color: transparent;
+            margin-bottom: 0px;
+        }
+    }
+    &.latest-news {
+        .link {
+            top: 570px;
+        }
+    }
+}

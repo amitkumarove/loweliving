@@ -1,0 +1,17 @@
+.land-acq-carousel {
+    height: 785px;
+
+    img{
+    	display:none;
+    	width:100%;
+    	height:auto;
+    }
+
+    @media screen and (max-width:1500px){
+    	height:auto;
+    	
+    	img{
+    		display:block;
+    	}
+    }
+}

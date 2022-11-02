@@ -1,0 +1,54 @@
+.page-template-helpdesk {
+    .single-col-text {
+        p {
+            font-family: $font-polaris-book;
+        }
+        strong {
+            font-family: $font-polaris;
+        }
+        @media screen and (max-width:$screen-md-max) {
+            padding: 100px 90px 90px 90px;
+            min-height: auto;
+        }
+        @media screen and (max-width:$screen-sm-max) {
+            padding: 100px 65px 90px 65px;
+            min-height: auto;
+        }
+        @media screen and (max-width:$screen-xs-max) {
+            padding:  90px 15px 90px 65px;
+        }
+    }
+    .contact-section {
+        @media screen and (max-width: $screen-sm-max) {
+            padding-left: 50px;
+		}
+    }
+    .scroll-section {
+        margin-top: 120px;
+        text-align: center;
+
+        @media screen and (max-height: 900px) and (min-width: 1200px) {
+            margin-top: 60px;
+        }
+
+        @media screen and (max-width:$screen-sm-max) {
+            margin-top: 60px;
+            margin-left: -50px;
+        }
+
+        a {
+            text-transform: uppercase;
+            color: $clr-living;
+            font-size: 20px;
+            font-family: $font-polaris-book;
+
+            img {
+                width: 20px;
+                height: 34px;
+                margin-top: 30px;
+                animation: bounceIndicator 1.8s infinite;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,143 @@
+.motif {
+	position:absolute;
+	z-index:10;
+	width:120px;
+	height:356px;
+
+	&--top-left {
+		top:0px;
+		left:0px;
+		margin-top:-178px;
+	}
+
+	&--top-right {
+		top:0px;
+		right:0px;
+		margin-top:-178px;
+	}
+
+	&--bottom-left {
+		bottom:0px;
+		left:0px;
+		margin-bottom:-178px;
+	}
+
+	&--bottom-right {
+		bottom:0px;
+		right:0px;
+		margin-bottom:-178px;
+	}
+
+	@media screen and (max-width:$screen-md-max),
+	screen and (max-height: 900px) and (min-width: 1200px) {
+		width:60px;
+		height:180px;
+
+		&--top-left,
+		&--top-right {
+			margin-top:-90px;
+		}
+
+		&--bottom-left,
+		&--bottom-right {
+			margin-bottom:-90px;
+		}
+	}
+
+	&__wrap {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+	}
+
+	&__inner,
+	&__outer,
+	&--single__inner {
+		position:absolute;
+		left:0px;
+		width:100%;
+		height:100%;
+
+		b {
+			position:absolute;
+			top:0px;
+			left:0px;
+			width:100%;
+			height:100%;
+			background-size:100% auto;
+		}
+
+		&--white b {
+			background-image:url('../../images/motif/white.svg');
+		}
+
+		&--xlightgrey b {
+			background-image:url('../../images/motif/xlightgrey.svg');
+		}
+
+		&--lightgrey b {
+			background-image:url('../../images/motif/lightgrey.svg');
+		}
+
+		&--grey b {
+			background-image:url('../../images/motif/grey.svg');
+		}
+
+		&--orange b {
+			background-image:url('../../images/motif/orange.svg');
+		}
+	}
+
+	&__inner {
+		.motif--top-left &,
+		.motif--top-right & {
+			top:50%;
+
+			b {
+				background-position:top left;
+			}
+		}
+
+		.motif--bottom-left &,
+		.motif--bottom-right & {
+			bottom:50%;
+
+			b {
+				background-position:bottom left;
+			}
+		}
+	}
+
+	&__outer {
+		.motif--top-left &,
+		.motif--top-right & {
+			bottom:50%;
+
+			b {
+				background-position:bottom left;
+			}
+		}
+
+		.motif--bottom-left &,
+		.motif--bottom-right & {
+			top:50%;
+
+			b {
+				background-position:top left;
+			}
+		}
+	}
+
+	&--single {
+		&__inner {
+			top:0px;
+
+			b {
+				background-position:center left;
+			}
+		}
+	}
+}

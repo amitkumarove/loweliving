@@ -1,0 +1,82 @@
+.land-acq-contact, 
+.contact-section {
+    background-color: white;
+    color: $clr-darkgrey;
+    padding: 156px 0px 195px;
+
+    .link {
+        color: #babbbd;
+    }
+
+    .contact-intro {
+        text-align: center;
+        margin-bottom: 55px;
+        max-width:380px;
+
+        h2 {
+            margin-bottom: 45px;
+            font-size: 30px;
+            line-height: 1.5;
+            font-weight: normal;
+            text-align: left;
+            color: $clr-text-color;
+            .intro-h2 {
+                line-height:inherit;
+            }
+            p {
+                text-align: left;
+                margin-top: 0px;
+            }
+
+            @media screen and (max-height: 900px) and (min-width: 1200px) {
+                font-size: 20px;
+            }
+
+            @media screen and (max-width: $screen-sm-max) {
+                font-size:20px;
+                margin-bottom: 95px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-height: 900px) and (min-width: 1200px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        padding: 70px 0px;
+    }
+
+    .wpcf7-form{
+        max-width:760px;
+        margin: 0 auto;
+    }
+}
+.land-acq-contact {
+    padding-left: 90px;
+    padding-right: 120px;
+
+    @media screen and (max-width: $screen-sm-max) {
+        padding-top: 125px;
+
+        padding-left: 55px;
+        padding-right: 55px;
+
+        .link {
+            top:110px;
+        }
+    }
+
+    @media screen and (max-width:$screen-xs-max) {
+        padding-left: 55px;
+        padding-right: 20px;
+    }
+}
+.contact-section {
+   background: $clr-lightgrey;
+}

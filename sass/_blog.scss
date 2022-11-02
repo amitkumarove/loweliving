@@ -1,0 +1,53 @@
+.blog,
+.date {
+	.select2-container--default {
+		.select2-selection--single {
+			background:$clr-grey;
+			border:1px solid $clr-darkgrey;
+
+			.select2-selection__rendered {
+				text-transform:capitalize;
+			}
+		}
+	}
+
+	@media screen and (min-width:$screen-md) and (max-width:$screen-md-max) {
+		.featured-article {
+			.image {
+				max-height:214px;
+			}
+		}
+	}
+
+	@media screen and (max-width:$screen-xs-max) {
+		.header .align-right {
+			margin:0px;
+		}
+	}
+}
+
+.single-post {
+	section.header {
+		@media screen and (max-width:$screen-sm-max) {
+			.row {
+				h2 {
+					margin-top:15px;
+				}
+			}
+		}
+	}
+
+	.slick {
+		.slick-arrow {
+			width:70px;
+
+			&:not(:hover):before {
+				opacity:0.5;
+			}
+		}
+
+		.slick-dots {
+			display:none !important;
+		}
+	}
+}
